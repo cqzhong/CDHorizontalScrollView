@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-    s.name             = 'HorizontalScrollView'
+    s.name             = 'CDHorizontalScrollView'
     s.version          = '0.0.1'
     s.summary          = '横向滚动视图'
 
