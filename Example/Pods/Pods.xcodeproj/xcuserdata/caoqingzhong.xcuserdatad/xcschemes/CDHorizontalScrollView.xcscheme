@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "55AF53E6C77A10ED4985E04D74A8878E"
-               BuildableName = "Masonry.framework"
-               BlueprintName = "Masonry"
+               BlueprintIdentifier = "CB3F42D0EAE7ED18E3AF2F8731556C9B"
+               BuildableName = "CDHorizontalScrollView.framework"
+               BlueprintName = "CDHorizontalScrollView"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "55AF53E6C77A10ED4985E04D74A8878E"
-            BuildableName = "Masonry.framework"
-            BlueprintName = "Masonry"
+            BlueprintIdentifier = "CB3F42D0EAE7ED18E3AF2F8731556C9B"
+            BuildableName = "CDHorizontalScrollView.framework"
+            BlueprintName = "CDHorizontalScrollView"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

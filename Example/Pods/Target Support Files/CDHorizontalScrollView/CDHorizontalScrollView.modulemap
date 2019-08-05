@@ -1,0 +1,6 @@
+framework module CDHorizontalScrollView {
+  umbrella header "CDHorizontalScrollView-umbrella.h"
+
+  export *
+  module * { export * }
+}

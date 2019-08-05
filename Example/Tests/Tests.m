@@ -1,8 +1,8 @@
 //
-//  HorizontalScrollViewTests.m
-//  HorizontalScrollViewTests
+//  CDHorizontalScrollViewTests.m
+//  CDHorizontalScrollViewTests
 //
-//  Created by cqzhong on 07/30/2019.
+//  Created by cqzhong on 08/05/2019.
 //  Copyright (c) 2019 cqzhong. All rights reserved.
 //
 

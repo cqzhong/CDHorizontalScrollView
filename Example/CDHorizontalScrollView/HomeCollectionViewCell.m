@@ -1,47 +1,66 @@
-# CDHorizontalScrollView
+//
+//  HomeCollectionViewCell.m
+//  HorizontalScrollView_Example
+//
+//  Created by cqz on 2019/8/5.
+//  Copyright © 2019 cqzhong. All rights reserved.
+//
 
-- CDHorizontalScrollView 支持UICollectionView, UITableView等控件添加横向滚动的视图
-
-<div>
-<img src="/images/horizontal.gif" width = "302" height = "644" alt="展示图" />
-</div>
-
-## Requirements
-* Xcode 7 or higher
-* iOS 8.0 or higher
-* ARC
-
-```ruby
-pod 'CDHorizontalScrollView'
-```
-
-### 使用方法
-
-```objc
-
+#import "HomeCollectionViewCell.h"
 #import "CDHorizontalScrollView.h"
+
+@interface HomeCollectionViewCell () <CDHorizontalScrollViewDelegate>
 
 @property (nonatomic, strong) CDHorizontalScrollView *horizontalScrollView;
 @property (nonatomic, strong) NSArray *array;
+@end
 
+@implementation HomeCollectionViewCell
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    
+    if (self = [super initWithFrame:frame]) {
+        [self setupView];
+    }
+    return self;
+}
+#pragma mark - Intial Methods
 - (void)setupView {
-
+    
     [self.contentView addSubview:self.horizontalScrollView];
-
+    
     self.array = @[@"text1", @"text2", @"text3", @"text4", @"text5", @"text6", @"text7", @"text8", @"text9"];
     [self.horizontalScrollView reloadData];
 }
+#pragma mark - Target Methods
 
+#pragma mark - Public Methods
 
+- (void)setupModel {
+    
+    
+    
+}
+
+-(void)cellSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
+
+#pragma mark - Private Method
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    
+}
 #pragma mark - CDHorizontalScrollViewDelegate
 - (NSArray *)numberOfColumnsInCollectionView:(CDHorizontalScrollView *)collectionView {
-
+    
     return [self.array copy];
 }
 
 //每个item大小
 - (CGSize)cellSizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-
+    
     return CGSizeMake(floor(CDREALVALUE_WIDTH(160.0)), floor(CDREALVALUE_HEIGHT(216.0)));
 }
 //上左下右
@@ -54,9 +73,8 @@ pod 'CDHorizontalScrollView'
 }
 
 - (void)didselectItemAtIndexPath:(NSIndexPath *)indexPath {
-
+    
 }
-
 #pragma mark - Setter Getter Methods
 - (CDHorizontalScrollView *)horizontalScrollView {
     if (!_horizontalScrollView) {
@@ -65,9 +83,4 @@ pod 'CDHorizontalScrollView'
     return _horizontalScrollView;
 }
 
-```
-
-
-## License
-
-CDHorizontalScrollView is available under the MIT license. See the LICENSE file for more info.
+@end

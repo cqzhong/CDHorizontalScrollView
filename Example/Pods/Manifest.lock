@@ -1,23 +1,23 @@
 PODS:
-  - HorizontalScrollView (0.0.1):
+  - CDHorizontalScrollView (1.0.0):
     - Masonry (~> 1.1.0)
   - Masonry (1.1.0)
 
 DEPENDENCIES:
-  - HorizontalScrollView (from `../`)
+  - CDHorizontalScrollView (from `../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Masonry
 
 EXTERNAL SOURCES:
-  HorizontalScrollView:
+  CDHorizontalScrollView:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HorizontalScrollView: 9e94eb47074bcd8368326121e8f93dfea2106c82
+  CDHorizontalScrollView: 7c7b61c610e73129fa5f60e99d54a78e15c38118
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
-PODFILE CHECKSUM: a2fe24e356c8434fc126b341edde96da38a99491
+PODFILE CHECKSUM: fd76be9271051fee53436ba098d3700e3b0fc008
 
 COCOAPODS: 1.7.1

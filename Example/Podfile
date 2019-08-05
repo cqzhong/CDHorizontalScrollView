@@ -3,10 +3,10 @@ use_frameworks!
 platform :ios, '8.0'
 inhibit_all_warnings!
 
-target 'HorizontalScrollView_Example' do
-  pod 'HorizontalScrollView', :path => '../'
+target 'CDHorizontalScrollView_Example' do
+  pod 'CDHorizontalScrollView', :path => '../'
 
-  target 'HorizontalScrollView_Tests' do
+  target 'CDHorizontalScrollView_Tests' do
     inherit! :search_paths
 
     
