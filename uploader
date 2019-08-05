@@ -1,0 +1,21 @@
+#!/bin/sh
+#!/bin/bash
+
+# 跳转到脚本所在目录
+pushd `dirname $0` > /dev/null
+#另一种写法：cd $(dirname "$0")；``等同于$()
+
+work_path=`pwd`
+popd > /dev/null
+
+cd $work_path
+
+read -p $'请输入tag更新内容：' tagMsg
+
+read -p $'请输入tag标示：' tag
+
+git tag -m $tagMsg $tag
+
+git push --tags
+
+pod trunk push --allow-warnings
